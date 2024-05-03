@@ -12,7 +12,7 @@ words = content.split()
 for i, word in enumerate(words):
     if word.upper() == "INTO":
         table_names.append(words[i + 1])
-
+print(table_names)
 for i in range(len(table_names)): 
     filename = table_names[i]+".sql"
     if os.path.exists(filename): 
